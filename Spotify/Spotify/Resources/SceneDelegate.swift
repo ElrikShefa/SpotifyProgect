@@ -11,12 +11,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 	var window: UIWindow?
 
-
-	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+	func scene(
+		_ scene: UIScene,
+		willConnectTo session: UISceneSession,
+		options connectionOptions: UIScene.ConnectionOptions
+	) {
 		guard let windowScene = (scene as? UIWindowScene) else { return }
-
 		let window = UIWindow(windowScene: windowScene)
-		window.rootViewController = MainTabBarController()
+
+		if AuthManager.shared.isSignedIn {
+			window.rootViewController = MainTabBarController()
+		} else {
+			window.rootViewController = makeNavigationVC()
+		}
+
 		window.makeKeyAndVisible()
 		self.window = window
 	}
@@ -52,3 +60,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+private extension SceneDelegate {
+
+	func makeNavigationVC() -> UINavigationController {
+		let navVC = UINavigationController(rootViewController: WelcomeViewController())
+		navVC.navigationBar.prefersLargeTitles = true
+		navVC.viewControllers.first?.navigationItem.largeTitleDisplayMode = .always
+
+		return navVC
+	}
+}

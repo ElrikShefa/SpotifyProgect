@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B938E11D2655B2430088DD8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E11C2655B2430088DD8F /* AppDelegate.swift */; };
 		B938E11F2655B2430088DD8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E11E2655B2430088DD8F /* SceneDelegate.swift */; };
-		B938E1212655B2430088DD8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1202655B2430088DD8F /* ViewController.swift */; };
 		B938E1262655B2480088DD8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B938E1252655B2480088DD8F /* Assets.xcassets */; };
 		B938E1292655B2480088DD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B938E1272655B2480088DD8F /* LaunchScreen.storyboard */; };
 		B938E13C2655C2060088DD8F /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E13B2655C2060088DD8F /* AuthManager.swift */; };
@@ -20,13 +19,22 @@
 		B938E14B2655C2C60088DD8F /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E14A2655C2C60088DD8F /* Artist.swift */; };
 		B938E14E2655C2D90088DD8F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E14D2655C2D90088DD8F /* UserProfile.swift */; };
 		B938E1512655C3440088DD8F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1502655C3440088DD8F /* MainTabBarController.swift */; };
+		B938E1552655C7410088DD8F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1542655C7410088DD8F /* HomeViewController.swift */; };
+		B938E1582655C7520088DD8F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1572655C7520088DD8F /* SearchViewController.swift */; };
+		B938E15B2655C7640088DD8F /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E15A2655C7640088DD8F /* LibraryViewController.swift */; };
+		B938E1642657E8EC0088DD8F /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1632657E8EC0088DD8F /* SearchResultsViewController.swift */; };
+		B938E1672657E8FD0088DD8F /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1662657E8FD0088DD8F /* PlaylistViewController.swift */; };
+		B938E16A2657E91A0088DD8F /* PlauerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1692657E91A0088DD8F /* PlauerViewController.swift */; };
+		B938E16D2657E93A0088DD8F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E16C2657E93A0088DD8F /* ProfileViewController.swift */; };
+		B938E1702657E9540088DD8F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E16F2657E9540088DD8F /* SettingsViewController.swift */; };
+		B938E1732657E9660088DD8F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1722657E9660088DD8F /* WelcomeViewController.swift */; };
+		B938E1762657E9760088DD8F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1752657E9760088DD8F /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B938E1192655B2430088DD8F /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B938E11C2655B2430088DD8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B938E11E2655B2430088DD8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B938E1202655B2430088DD8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B938E1252655B2480088DD8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B938E1282655B2480088DD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B938E12A2655B2480088DD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +46,16 @@
 		B938E14A2655C2C60088DD8F /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		B938E14D2655C2D90088DD8F /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		B938E1502655C3440088DD8F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B938E1542655C7410088DD8F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B938E1572655C7520088DD8F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B938E15A2655C7640088DD8F /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		B938E1632657E8EC0088DD8F /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		B938E1662657E8FD0088DD8F /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		B938E1692657E91A0088DD8F /* PlauerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlauerViewController.swift; sourceTree = "<group>"; };
+		B938E16C2657E93A0088DD8F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B938E16F2657E9540088DD8F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B938E1722657E9660088DD8F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B938E1752657E9760088DD8F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +148,35 @@
 		B938E1362655B2E00088DD8F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B938E1202655B2430088DD8F /* ViewController.swift */,
-				B938E1502655C3440088DD8F /* MainTabBarController.swift */,
+				B938E1622657E8C00088DD8F /* Other */,
+				B938E1602657E8B80088DD8F /* Core */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B938E1602657E8B80088DD8F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B938E1502655C3440088DD8F /* MainTabBarController.swift */,
+				B938E1542655C7410088DD8F /* HomeViewController.swift */,
+				B938E1572655C7520088DD8F /* SearchViewController.swift */,
+				B938E15A2655C7640088DD8F /* LibraryViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B938E1622657E8C00088DD8F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B938E1632657E8EC0088DD8F /* SearchResultsViewController.swift */,
+				B938E1662657E8FD0088DD8F /* PlaylistViewController.swift */,
+				B938E1692657E91A0088DD8F /* PlauerViewController.swift */,
+				B938E16C2657E93A0088DD8F /* ProfileViewController.swift */,
+				B938E16F2657E9540088DD8F /* SettingsViewController.swift */,
+				B938E1722657E9660088DD8F /* WelcomeViewController.swift */,
+				B938E1752657E9760088DD8F /* AuthViewController.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,16 +249,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				B938E1422655C22D0088DD8F /* HapticsManager.swift in Sources */,
-				B938E1212655B2430088DD8F /* ViewController.swift in Sources */,
 				B938E1512655C3440088DD8F /* MainTabBarController.swift in Sources */,
 				B938E14E2655C2D90088DD8F /* UserProfile.swift in Sources */,
 				B938E1482655C2B80088DD8F /* AudioTrack.swift in Sources */,
 				B938E14B2655C2C60088DD8F /* Artist.swift in Sources */,
+				B938E1642657E8EC0088DD8F /* SearchResultsViewController.swift in Sources */,
 				B938E1452655C2840088DD8F /* PlayList.swift in Sources */,
+				B938E16D2657E93A0088DD8F /* ProfileViewController.swift in Sources */,
+				B938E1582655C7520088DD8F /* SearchViewController.swift in Sources */,
 				B938E13C2655C2060088DD8F /* AuthManager.swift in Sources */,
+				B938E1552655C7410088DD8F /* HomeViewController.swift in Sources */,
 				B938E11D2655B2430088DD8F /* AppDelegate.swift in Sources */,
+				B938E1762657E9760088DD8F /* AuthViewController.swift in Sources */,
+				B938E1672657E8FD0088DD8F /* PlaylistViewController.swift in Sources */,
 				B938E13F2655C2180088DD8F /* APICaller.swift in Sources */,
+				B938E16A2657E91A0088DD8F /* PlauerViewController.swift in Sources */,
 				B938E11F2655B2430088DD8F /* SceneDelegate.swift in Sources */,
+				B938E15B2655C7640088DD8F /* LibraryViewController.swift in Sources */,
+				B938E1702657E9540088DD8F /* SettingsViewController.swift in Sources */,
+				B938E1732657E9660088DD8F /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
