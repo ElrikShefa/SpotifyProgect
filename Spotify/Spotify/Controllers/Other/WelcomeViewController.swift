@@ -9,17 +9,51 @@ import UIKit
 
 final class WelcomeViewController: UIViewController {
 
+	private lazy var singInButton = UIButton(type: .system)
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setupUI()
 	}
+	
+	override func viewDidLayoutSubviews() {
+		super.viewDidLayoutSubviews()
+		
+	}
 }
 
 private extension WelcomeViewController {
-
+	
 	func setupUI() {
 		title = "Spotify"
 		view.backgroundColor = .green
+
+		singInButton.backgroundColor = .white
+		singInButton.setTitle("Sing In with Spotify", for: .normal)
+		singInButton.setTitleColor(.blue, for: .normal)
+		singInButton.addTarget(self, action: #selector(didTapSingIn), for: .touchUpInside)
+		singInButton.translatesAutoresizingMaskIntoConstraints = false
+
+		view.addSubview(singInButton)
+
+		NSLayoutConstraint.activate([
+			singInButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+			singInButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+			singInButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
+			singInButton.heightAnchor.constraint(equalToConstant: 50)
+		])
+	}
+	
+	@objc func didTapSingIn() {
+		let vc = AuthViewController()
+		vc.navigationItem.largeTitleDisplayMode = .never
+		navigationController?.pushViewController(vc, animated: true)
+	}
+
+	func handleSignIn(success: Bool) {
+		//log user in or yell at them for error
+
+
 	}
 }
 

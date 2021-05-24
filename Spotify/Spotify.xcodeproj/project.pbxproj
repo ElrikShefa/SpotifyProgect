@@ -29,6 +29,7 @@
 		B938E1702657E9540088DD8F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E16F2657E9540088DD8F /* SettingsViewController.swift */; };
 		B938E1732657E9660088DD8F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1722657E9660088DD8F /* WelcomeViewController.swift */; };
 		B938E1762657E9760088DD8F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1752657E9760088DD8F /* AuthViewController.swift */; };
+		B938E17E265818AF0088DD8F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E17D265818AF0088DD8F /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		B938E16F2657E9540088DD8F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B938E1722657E9660088DD8F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B938E1752657E9760088DD8F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		B938E17D265818AF0088DD8F /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				B938E11C2655B2430088DD8F /* AppDelegate.swift */,
 				B938E11E2655B2430088DD8F /* SceneDelegate.swift */,
 				B938E1252655B2480088DD8F /* Assets.xcassets */,
+				B938E17D265818AF0088DD8F /* View+Extension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				B938E11F2655B2430088DD8F /* SceneDelegate.swift in Sources */,
 				B938E15B2655C7640088DD8F /* LibraryViewController.swift in Sources */,
 				B938E1702657E9540088DD8F /* SettingsViewController.swift in Sources */,
+				B938E17E265818AF0088DD8F /* View+Extension.swift in Sources */,
 				B938E1732657E9660088DD8F /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
