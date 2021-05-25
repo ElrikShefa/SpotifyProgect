@@ -30,6 +30,7 @@
 		B938E1732657E9660088DD8F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1722657E9660088DD8F /* WelcomeViewController.swift */; };
 		B938E1762657E9760088DD8F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E1752657E9760088DD8F /* AuthViewController.swift */; };
 		B938E17E265818AF0088DD8F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938E17D265818AF0088DD8F /* View+Extension.swift */; };
+		B999A85B265D4FF400B521BB /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B999A85A265D4FF400B521BB /* AuthResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		B938E1722657E9660088DD8F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B938E1752657E9760088DD8F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B938E17D265818AF0088DD8F /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		B999A85A265D4FF400B521BB /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +127,6 @@
 		B938E1332655B2B90088DD8F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B938E1442655C2840088DD8F /* PlayList.swift */,
-				B938E1472655C2B80088DD8F /* AudioTrack.swift */,
-				B938E14A2655C2C60088DD8F /* Artist.swift */,
-				B938E14D2655C2D90088DD8F /* UserProfile.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -136,6 +134,11 @@
 		B938E1342655B2C90088DD8F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B938E1442655C2840088DD8F /* PlayList.swift */,
+				B938E1472655C2B80088DD8F /* AudioTrack.swift */,
+				B938E14A2655C2C60088DD8F /* Artist.swift */,
+				B999A85A265D4FF400B521BB /* AuthResponse.swift */,
+				B938E14D2655C2D90088DD8F /* UserProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				B938E1642657E8EC0088DD8F /* SearchResultsViewController.swift in Sources */,
 				B938E1452655C2840088DD8F /* PlayList.swift in Sources */,
 				B938E16D2657E93A0088DD8F /* ProfileViewController.swift in Sources */,
+				B999A85B265D4FF400B521BB /* AuthResponse.swift in Sources */,
 				B938E1582655C7520088DD8F /* SearchViewController.swift in Sources */,
 				B938E13C2655C2060088DD8F /* AuthManager.swift in Sources */,
 				B938E1552655C7410088DD8F /* HomeViewController.swift in Sources */,

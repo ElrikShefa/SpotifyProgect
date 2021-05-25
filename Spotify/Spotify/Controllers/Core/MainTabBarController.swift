@@ -24,7 +24,7 @@ private extension MainTabBarController {
 		let vc2 = SearchViewController()
 		let vc3 = LibraryViewController()
 
-		setViewControllers([makeNavController(title: "Browse", view: vc1, tabTitle: "Home", tabImage: "house"),
+		setViewControllers([makeNavController(title: "Home", view: vc1, tabTitle: "Home", tabImage: "house"),
 							makeNavController(title: "Search", view: vc2, tabTitle: "Search", tabImage: "magnifyingglass"),
 							makeNavController(title: "Library", view: vc3, tabTitle: "Library", tabImage: "music.note.list")],
 						   animated: false)

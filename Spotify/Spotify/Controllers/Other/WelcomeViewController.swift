@@ -52,7 +52,18 @@ private extension WelcomeViewController {
 
 	func handleSignIn(success: Bool) {
 		//log user in or yell at them for error
+		guard success else {
+			let alert = UIAlertController(title: "Ooops",
+										  message: "Something went wrong when singin in",
+										  preferredStyle: .alert)
+			alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+			present(alert, animated: true)
+			return
+		}
 
+		let mainAppTabBarVC = MainTabBarController()
+		mainAppTabBarVC.modalPresentationStyle = .fullScreen
+		present(mainAppTabBarVC, animated: true)
 
 	}
 }
