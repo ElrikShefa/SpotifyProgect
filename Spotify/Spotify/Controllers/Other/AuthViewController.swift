@@ -41,7 +41,16 @@ final class AuthViewController: UIViewController {
 				.first(where: { $0.name == "code" })?
 				.value else { return}
 
+		webView.isHidden = true
+
 		print("\(code)")
+		AuthManager.shared.exchangeCodeForToken(code: code) { [weak self] success in
+			guard let self = self else { return }
+			DispatchQueue.main.async {
+				self.navigationController?.popViewController(animated: true)
+				self.completionHandler?(success)
+			}
+		}
 	}
 }
 
