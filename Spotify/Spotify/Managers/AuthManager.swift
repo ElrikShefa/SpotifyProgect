@@ -96,11 +96,28 @@ final class AuthManager {
 		task.resume()
 	}
 
+	public func withValidToken(completion: @escaping (String) -> Void) {
+		if shouldRefreshToken {
+			//refresh
+			refreshIfNeeded { [weak self] success in
+				guard let self = self else { return }
+
+				if let token = self.accessToken, success {
+					completion(token)
+
+				}
+			}
+		}
+		else if let token = accessToken {
+			completion(token)
+		}
+	}
+
 	public func refreshIfNeeded(completion: @escaping (Bool) -> Void) {
-		//		guard shouldRefreshToken else {
-		//			completion(true)
-		//			return
-		//		}
+		guard shouldRefreshToken else {
+			completion(true)
+			return
+		}
 		guard let refreshToken = self.refreshToken else { return }
 		//refresh the token
 		guard let url = URL(string: Constants.tokenAPIURL) else { return }
